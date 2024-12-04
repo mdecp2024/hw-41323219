@@ -52,10 +52,47 @@
 <p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="315" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/hCQz5uyV9Qw?si=vcUs8pkZ8u3xzxAc" title="YouTube video player" width="560"></iframe></p>
 <p>第二部分:</p>
 <p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="315" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/Sl2Erd72oD0?si=tmfhuLuTWGqb7Om1" title="YouTube video player" width="560"></iframe></p>
-<h3>w11</h3>
+<h3>w11_hw</h3>
 <p></p>
 <p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="315" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/x_VuTpPUuBU?si=BGDWVNaR5QAHQqzw" title="YouTube video player" width="560"></iframe></p>
-<p></p><h1>HW 2</h1>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">from browser import html
+from browser import document as doc
+
+# 利用 html 建立 canvas 超文件物件
+canvas = html.CANVAS(width = 400, height = 400)
+brython_div = doc["brython_div1"]
+brython_div &lt;= canvas
+
+# 每一格的 pixel 數
+gs = 20
+
+# gs*tc = canvas width and height
+
+ctx = canvas.getContext("2d")
+
+width = 11
+height = 11
+
+"""
+ctx.lineWidth = 1
+ctx.strokeStyle = 'lightgrey'
+ctx.beginPath()
+#ctxrect(i*gs,j*gs,gs,gs)
+ctx.rect(0,0,150,100)
+ctx.stroke()
+"""
+for i in range(width):
+    for j in range(height):
+        #dRect(i*gs,j*gs,gs,gs, 1,"lightgrey)
+        ctx.lineWidth = 1
+        ctx.strokestyle='lightgrey'
+        ctx.beginPath();
+        ctx.rect(i*gs,j*gs,gs,gs)
+        ctx.stroke();</pre>
+<p><br/><br/></p>
+<h3>w12_hw</h3>
+<h3>w13_hw</h3>
+<p><a href="https://mdecp2024.github.io/hw-41323219/content/Brython.html?src=https://gist.githubusercontent.com/41323219/2076f6da775dcb3f572d3f86ecb8033c/raw/a31438476117a6f82475a2fdc2a8284f74acde52/gistfile1.txt">紅格</a></p><h1>HW 2</h1>
 <h4>主題: Python 的數列、判斷式與重複迴圈 (20%)<span style="background-color: #ffff99;"><br/></span></h4>
 <p style="padding-left: 30px;">Python 課程教材: <a href="https://www.learnpythonwithjupyter.com/">https://www.learnpythonwithjupyter.com/</a> - PART 2 and Part 3</p>
 <hr/>
